@@ -2,12 +2,31 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  width: 700px;
 }
 
 .card {
+  display: grid;
   background-color: white;
-  border: 1px solid black;
-  padding: 10px;
   margin: 10px;
+  align-content: center;
+  justify-items: center;
+}
+
+.card-img {
+  border: 2px solid gray;
+  border-radius: 20px;
+  width: 200px;
+  transition: 0.2s;
+}
+
+.card-img:hover {
+   -webkit-filter: brightness(.8);
+   filter: brightness(.8);
+   cursor: pointer;
+   transform: scale(1.05);
+   transition: 0.2s;
 }

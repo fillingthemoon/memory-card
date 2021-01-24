@@ -11,8 +11,8 @@ const Scoreboard = ({score}) => {
 
   return (
     <div id="scoreboard-div">
-      <h2>Score: {score}</h2>
-      <h3>Highscore: {highscore}</h3>
+      <h2>Score: {score} </h2>
+      <h2>Highscore: {highscore}</h2>
     </div>
   );
 }
