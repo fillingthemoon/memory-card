@@ -1,7 +1,7 @@
 #card-div {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   margin: auto;
@@ -17,9 +17,9 @@
 }
 
 .card-img {
-  border: 2px solid gray;
-  border-radius: 20px;
-  width: 200px;
+  border: 2px solid #1f1f1f;
+  border-radius: 10px;
+  width: 150px;
   transition: 0.2s;
 }
 

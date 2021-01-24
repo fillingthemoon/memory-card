@@ -10,16 +10,29 @@ import img_5 from "../imgs/milo-dinosaur.jpg";
 import img_6 from "../imgs/oolong-tea.jpg";
 import img_7 from "../imgs/soursop.png";
 import img_8 from "../imgs/teh-c.jpg";
+import img_9 from "../imgs/bubble-tea.jpg";
+import img_10 from "../imgs/grass-jelly.jpg";
+import img_11 from "../imgs/yakult.jpg";
+import img_12 from "../imgs/michael-jackson.jpg";
+import img_13 from "../imgs/tiger-beer.png";
+import img_14 from "../imgs/sugarcane.jpg";
+import img_15 from "../imgs/soybean-milk.jpg";
+
+let gloArr = [img_0, img_1, img_2, img_3, 
+  img_4, img_5, img_6, img_7, 
+  img_8, img_9, img_10, img_11,
+  img_12, img_13, img_14, img_15];
 
 const Cards = (props) => {
-  const imgArr = [img_0, img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8];
+  const imgArr = gloArr;
 
   const [arr, setArr] = useState(imgArr);
   const { score, setScore } = props;
   const [visited, setVisited] = useState([]);
 
   const selectCard = (num) => () => {
-    let tempArr = [img_0, img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8];
+    let tempArr = gloArr;
+
     for (let i = tempArr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [tempArr[i], tempArr[j]] = [tempArr[j], tempArr[i]];
@@ -36,62 +49,25 @@ const Cards = (props) => {
     }
   };
 
+  const renderImgs = () => {
+    let result = [];
+    for (let i = 0; i < 16; i++) {
+      result.push(
+        <div 
+          key={i}
+          className="card" id={arr[i]}
+          onClick={selectCard(arr[i])}
+        >
+        <img className="card-img" src={arr[i]} alt="" /> 
+        </div>
+      );
+    }
+    return result;
+  };
+
   return (
     <div id="card-div">
-      <div 
-        className="card" id={arr[0]}
-        onClick={selectCard(arr[0])}
-      >
-      <img className="card-img" src={arr[0]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[1]}
-        onClick={selectCard(arr[1])}
-      >
-      <img className="card-img" src={arr[1]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[2]}
-        onClick={selectCard(arr[2])}
-      >
-      <img className="card-img" src={arr[2]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[3]}
-        onClick={selectCard(arr[3])}
-      >
-      <img className="card-img" src={arr[3]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[4]}
-        onClick={selectCard(arr[4])}
-      >
-      <img className="card-img" src={arr[4]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[5]}
-        onClick={selectCard(arr[5])}
-      >
-      <img className="card-img" src={arr[5]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[6]}
-        onClick={selectCard(arr[6])}
-      >
-      <img className="card-img" src={arr[6]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[7]}
-        onClick={selectCard(arr[7])}
-      >
-      <img className="card-img" src={arr[7]} alt="" /> 
-      </div>
-      <div 
-        className="card" id={arr[8]}
-        onClick={selectCard(arr[8])}
-      >
-      <img className="card-img" src={arr[8]} alt="" /> 
-      </div>
+      {renderImgs()}   
     </div>
   );
 }
