@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77e2646c.chunk.css",
+    "main.js": "/static/js/main.e59a1dee.chunk.js",
+    "main.js.map": "/static/js/main.e59a1dee.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d1e53a60.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d1e53a60.js.map",
+    "static/js/2.9467271c.chunk.js": "/static/js/2.9467271c.chunk.js",
+    "static/js/2.9467271c.chunk.js.map": "/static/js/2.9467271c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.77e2646c.chunk.css.map": "/static/css/main.77e2646c.chunk.css.map",
+    "static/js/2.9467271c.chunk.js.LICENSE.txt": "/static/js/2.9467271c.chunk.js.LICENSE.txt",
+    "static/media/bandung.9952d4cf.jpg": "/static/media/bandung.9952d4cf.jpg",
+    "static/media/carrot-juice.f870dd83.jpg": "/static/media/carrot-juice.f870dd83.jpg",
+    "static/media/ice-lemon-tea.bc7f4b6a.jpg": "/static/media/ice-lemon-tea.bc7f4b6a.jpg",
+    "static/media/kopi-o.79b2923b.jpg": "/static/media/kopi-o.79b2923b.jpg",
+    "static/media/kopi.52f63aeb.jpg": "/static/media/kopi.52f63aeb.jpg",
+    "static/media/milo-dinosaur.ef76e751.jpg": "/static/media/milo-dinosaur.ef76e751.jpg",
+    "static/media/oolong-tea.b454da32.jpg": "/static/media/oolong-tea.b454da32.jpg",
+    "static/media/soursop.e221353c.png": "/static/media/soursop.e221353c.png",
+    "static/media/teh-c.0e5fead4.jpg": "/static/media/teh-c.0e5fead4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d1e53a60.js",
+    "static/js/2.9467271c.chunk.js",
+    "static/css/main.77e2646c.chunk.css",
+    "static/js/main.e59a1dee.chunk.js"
+  ]
+}
