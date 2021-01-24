@@ -10,6 +10,7 @@ const  App = () => {
   return (
     <div id="app-div">
       <h1>Memory Game</h1>
+      <h3>GitHub repo <a href="">here</a></h3>
       <Scoreboard score={score}/>
       <Cards score={score} setScore={setScore} />
     </div>

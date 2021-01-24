@@ -1,4 +1,23 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+h3 {
+ font-weight: 300;
+}
+
+a {
+  text-decoration: None;
+}
+
 #app-div {
   margin: 20px;
-  background-color: teal;
 }
