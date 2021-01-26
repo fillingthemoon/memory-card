@@ -38,7 +38,7 @@ const Cards = (props) => {
       [tempArr[i], tempArr[j]] = [tempArr[j], tempArr[i]];
     }
     setArr(tempArr);
-    setScore(score + 1);
+    setScore(score + 1);  
 
     if (visited.includes(num)) {
       setScore(0);

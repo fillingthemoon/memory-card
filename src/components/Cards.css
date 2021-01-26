@@ -1,11 +1,10 @@
 #card-div {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
   margin: auto;
-  width: 700px;
+  max-width: 700px;
 }
 
 .card {
@@ -17,9 +16,9 @@
 }
 
 .card-img {
-  border: 2px solid #1f1f1f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  width: 150px;
+  max-width: 135px;
   transition: 0.2s;
 }
 
